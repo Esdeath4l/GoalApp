@@ -1,6 +1,3 @@
-Here’s a basic example of a **README** file for your project. You can personalize it further based on your project specifics:
-
----
 
 ### **README.md**
 
@@ -80,8 +77,3 @@ This project is **all rights reserved**. Unauthorized use, reproduction, or dist
 2. Copy and paste the above content into that file.
 3. Commit and push it to your GitHub repository.
 
-```bash
-git add README.md
-git commit -m "Add README file"
-git push
-````
