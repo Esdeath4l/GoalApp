@@ -82,7 +82,7 @@ This project is **all rights reserved**. Unauthorized use, reproduction, or dist
 
 ## Author
 
-* **Your Name** - [Your GitHub Profile](https://github.com/yourusername)
+* **Your Name** - [Your GitHub Profile](https://github.com/Esdeath4l)
 
 ---
 
