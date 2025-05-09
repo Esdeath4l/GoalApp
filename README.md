@@ -121,13 +121,10 @@ Displays each goal in a list. It includes:
 
 ## Example Screenshots
 
-### Add New Goal Screen
-
-![Add Goal](assets/add-goal.png)
-
-### Goal List Screen
-
-![Goal List](assets/goal-list.png)
+### Add New Goal Screen & Goal List Screen
+(![12323d2d-8ff3-47a7-bdaf-fce61880b838](https://github.com/user-attachments/assets/30f0c0c0-efb7-4fd4-b951-39967d7a6333))
+(  ![1b45ac59-c122-48af-b9e2-ebb51ea3f577](https://github.com/user-attachments/assets/f626d019-3cef-4c3b-ae35-f294310e6829)
+   )
 
 ---
 
