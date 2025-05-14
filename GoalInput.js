@@ -7,6 +7,7 @@ import {
   Modal,
   Pressable,
   Text,
+  Platform,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -24,18 +25,24 @@ export default function GoalInput({
         style={styles.modalContainer}
       >
         <View style={styles.inputWrapper}>
-          <Text style={styles.title}>Add New Goal</Text>
+          <Text style={[styles.title, { fontFamily: 'Poppins-Regular' }]}> Add New Goal</Text>
           <TextInput
             onChangeText={onInputChange}
-            style={styles.input}
+            style={[styles.input, { fontFamily: 'Poppins-Regular' }]}
             placeholder="Your goal"
             value={enteredText}
             placeholderTextColor="#d63384"
           />
           <View style={styles.buttonsContainer}>
-            <Button onPress={onAddGoal} title="Add" color="#ff1493" />
+            <View style={styles.addButtonWrapper}>
+              <Button
+                onPress={onAddGoal}
+                title="Add"
+                color={Platform.OS === 'ios' ? undefined : '#ff1493'}
+              />
+            </View>
             <Pressable onPress={onClose} style={styles.cancelButton}>
-              <Text style={styles.cancelText}>Cancel</Text>
+              <Text style={[styles.cancelText, { fontFamily: 'Poppins-Regular' }]}>Cancel</Text>
             </Pressable>
           </View>
         </View>
@@ -49,6 +56,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     padding: 24,
+    
   },
   inputWrapper: {
     backgroundColor: 'rgba(255, 255, 255, 0.95)',
@@ -80,6 +88,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+  },
+  addButtonWrapper: {
+    flex: 1,
   },
   cancelButton: {
     marginLeft: 16,

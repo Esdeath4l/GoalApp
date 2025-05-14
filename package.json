@@ -9,13 +9,19 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.1.2",
     "@react-native-community/viewpager": "^5.0.11",
     "expo": "53.0.9",
+    "expo-app-loading": "^2.1.1",
     "expo-font": "~13.3.1",
+    "expo-linear-gradient": "~14.1.4",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
     "react-native": "0.79.2",
-    "expo-linear-gradient": "~14.1.4"
+    "react-native-animatable": "^1.4.0",
+    "react-native-reanimated": "^3.17.5",
+    "react-native-vector-icons": "^10.2.0",
+    "expo-splash-screen": "~0.30.8"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

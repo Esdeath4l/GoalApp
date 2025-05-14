@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, Pressable } from 'react-native';
 
-export default function GoalItem({ text, onDelete }) {
+export default function GoalItem({ text, id, onDelete }) {
   return (
     <View style={styles.goalItem}>
-      <Text style={styles.goalText}>{text}</Text>
-      <Pressable onPress={onDelete} style={styles.deleteButton}>
+      <Text style={styles.goalText}>🌷 {text}</Text>
+      <Pressable onPress={() => onDelete(id)} style={styles.deleteButton}>
         <Text style={styles.deleteText}>🗑</Text>
       </Pressable>
     </View>
@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     flex: 1,
     paddingRight: 10,
+    fontFamily: 'poppins',
   },
   deleteButton: {
     width: 32,
@@ -44,5 +45,6 @@ const styles = StyleSheet.create({
   deleteText: {
     color: 'white',
     fontSize: 16,
+    fontFamily: 'poppins',
   },
 });
