@@ -25,10 +25,10 @@ export default function GoalInput({
         style={styles.modalContainer}
       >
         <View style={styles.inputWrapper}>
-          <Text style={[styles.title, { fontFamily: 'Poppins-Regular' }]}> Add New Goal</Text>
+          <Text style={[styles.title, { fontFamily: 'poppins' }]}> Add New Goal</Text>
           <TextInput
             onChangeText={onInputChange}
-            style={[styles.input, { fontFamily: 'Poppins-Regular' }]}
+            style={[styles.input, { fontFamily: 'poppins' }]}
             placeholder="Your goal"
             value={enteredText}
             placeholderTextColor="#d63384"
@@ -42,7 +42,7 @@ export default function GoalInput({
               />
             </View>
             <Pressable onPress={onClose} style={styles.cancelButton}>
-              <Text style={[styles.cancelText, { fontFamily: 'Poppins-Regular' }]}>Cancel</Text>
+              <Text style={[styles.cancelText, { fontFamily: 'poppins' }]}>Cancel</Text>
             </Pressable>
           </View>
         </View>
