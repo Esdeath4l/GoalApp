@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: 'center',
     color: '#c2185b',
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'poppins',
     
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 10,
