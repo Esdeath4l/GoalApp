@@ -1,6 +1,7 @@
+// GoalItem.js
 import React, { useEffect, useRef } from 'react';
-import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient'; // or react-native-linear-gradient
+import { Animated, Pressable, StyleSheet, Text } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function GoalItem({ id, text, onDelete, isDark }) {
   const fadeAnim = useRef(new Animated.Value(0)).current;

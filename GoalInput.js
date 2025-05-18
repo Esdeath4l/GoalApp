@@ -6,10 +6,10 @@ import {
   StyleSheet,
   Modal,
   Pressable,
-  Text,
   Platform,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import AppText from './Appext';
 
 export default function GoalInput({ onAddGoal, onInputChange, enteredText, visible, onClose, isDark }) {
   return (
@@ -19,7 +19,9 @@ export default function GoalInput({ onAddGoal, onInputChange, enteredText, visib
         style={styles.modalContainer}
       >
         <View style={[styles.fullScreenWrapper, isDark ? styles.darkGlass : styles.lightGlass]}>
-          <Text style={[styles.title, { color: isDark ? '#E6E6FA' : '#c2185b' }]}>Add New Goal</Text>
+          <AppText bold style={[styles.title, { color: isDark ? '#E6E6FA' : '#c2185b' }]}>
+            Add New Goal
+          </AppText>
           <TextInput
             onChangeText={onInputChange}
             style={[
@@ -36,12 +38,11 @@ export default function GoalInput({ onAddGoal, onInputChange, enteredText, visib
           />
           <View style={styles.buttonsContainer}>
             <View style={styles.addButtonWrapper}>
-              <Button 
+              <Button
                 onPress={onAddGoal}
                 title="Add"
                 color={Platform.OS === 'ios' ? undefined : isDark ? '#d1c4e988' : '#c2185b'}
               />
-
             </View>
             <Pressable
               onPress={onClose}
@@ -53,7 +54,9 @@ export default function GoalInput({ onAddGoal, onInputChange, enteredText, visib
                 },
               ]}
             >
-              <Text style={[styles.cancelText, { color: isDark ? '#E6E6FA' : '#c2185b' }]}>Cancel</Text>
+              <AppText style={[styles.cancelText, { color: isDark ? '#E6E6FA' : '#c2185b' }]}>
+                Cancel
+              </AppText>
             </Pressable>
           </View>
         </View>
@@ -80,40 +83,39 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(75, 0, 130, 0.4)',
   },
   lightGlass: {
-    backgroundColor: 'rgba(255, 255, 255, 0.4)',
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: '700',
-    marginBottom: 16,
-    textAlign: 'center',
-    fontFamily: 'poppins',
-  },
-  input: {
-    borderWidth: 1.5,
-    padding: 14,
-    marginBottom: 18,
-    fontFamily: 'poppins',
-    fontSize: 16,
-    borderRadius: 16,
-  },
-  buttonsContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  addButtonWrapper: {
-    flex: 1,
-  },
-  cancelButton: {
-    marginLeft: 16,
-    paddingHorizontal: 14,
-    paddingVertical: 12,
-    borderRadius: 16,
-  },
-  cancelText: {
-    fontWeight: '700',
-    fontSize: 16,
-    fontFamily: 'poppins',
-    textAlign: 'center',
-  },
+    backgroundColor: 'rgba(255,192, 203, 0.4)',
+},
+title: {
+fontSize: 22,
+marginBottom: 20,
+textAlign: 'center',
+},
+input: {
+borderRadius: 12,
+borderWidth: 1,
+paddingHorizontal: 16,
+paddingVertical: 12,
+fontSize: 18,
+fontFamily: 'poppins',
+marginBottom: 24,
+},
+buttonsContainer: {
+flexDirection: 'row',
+justifyContent: 'space-around',
+},
+addButtonWrapper: {
+flex: 1,
+marginRight: 8,
+},
+cancelButton: {
+flex: 1,
+borderRadius: 12,
+paddingVertical: 12,
+justifyContent: 'center',
+alignItems: 'center',
+},
+cancelText: {
+fontSize: 18,
+fontFamily: 'poppins',
+},
 });
