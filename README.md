@@ -21,7 +21,7 @@ A beautifully designed goal-tracking mobile application built with **React Nativ
 (![WhatsApp Image 2025-05-18 at 3 13 42 PM (2)](https://github.com/user-attachments/assets/43eedcab-16ac-44f2-bcfb-96bda187359c))
 (![WhatsApp Image 2025-05-18 at 3 13 42 PM](https://github.com/user-attachments/assets/ac7513be-ead9-43d8-9dc4-586799463898)![WhatsApp Image 2025-05-18 at 3 13 41 PM](https://github.com/user-attachments/assets/fabf042e-0fe2-485c-b0c5-d27e0e95c8e8))
 
-> ![Dark Mode](screenshots/dark-mode.png)
+> ![Dark Mode]
 
 (![WhatsApp Image 2025-05-18 at 3 13 42 PM (1)](https://github.com/user-attachments/assets/c04b778e-2ec2-4ee9-9980-327b4eb3cba7))
 
