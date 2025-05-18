@@ -15,8 +15,6 @@ A beautifully designed goal-tracking mobile application built with **React Nativ
 
 ## 📸 Screenshots
 
-> _Add screenshots here after taking them from your emulator/device_  
-> Example:  
 > ![Add Goal Screen]
 (![WhatsApp Image 2025-05-18 at 3 13 42 PM (2)](https://github.com/user-attachments/assets/43eedcab-16ac-44f2-bcfb-96bda187359c))
 (![WhatsApp Image 2025-05-18 at 3 13 42 PM](https://github.com/user-attachments/assets/ac7513be-ead9-43d8-9dc4-586799463898)!)
