@@ -1,170 +1,103 @@
 
-🌸 **Welcome to My Goal Tracker App!**
+# 🎯 GoalApp
 
-A simple mobile application built with **React Native** for tracking and managing your goals. The app features a clean, minimalist, and aesthetic UI with a gradient background. You can add and delete goals, keeping track of your progress effortlessly.
+A beautifully designed goal-tracking mobile application built with **React Native**, featuring a pink theme, custom **Poppins** font, smooth animations, dark mode support, and persistent storage.
 
----
+## 🚀 Features
 
-## Features
+- 📌 Add, view, and remove personal goals
+- 🌙 Light & Dark mode with persistent theme preference
+- ✨ Smooth UI animations and transitions
+- 🎨 Custom `Poppins` font across all UI components
+- 🧠 Uses `uuid` for unique goal IDs
+- 💾 Local storage to save goals between app launches (via `AsyncStorage`)
+- 💅 Polished, responsive, and minimalist UI
 
-- **Add Goals**: Input new goals and save them.
-- **Delete Goals**: Remove any goal from your list.
-- **Minimal UI**: Clean, modern design with a gradient background.
-- **Simple Interaction**: Easy to use and navigate.
+## 📸 Screenshots
 
-## Technologies Used
+> _Add screenshots here after taking them from your emulator/device_  
+> Example:  
+> ![Add Goal Screen]
+(![WhatsApp Image 2025-05-18 at 3 13 42 PM (2)](https://github.com/user-attachments/assets/43eedcab-16ac-44f2-bcfb-96bda187359c))
+(![WhatsApp Image 2025-05-18 at 3 13 42 PM](https://github.com/user-attachments/assets/ac7513be-ead9-43d8-9dc4-586799463898)![WhatsApp Image 2025-05-18 at 3 13 41 PM](https://github.com/user-attachments/assets/fabf042e-0fe2-485c-b0c5-d27e0e95c8e8))
 
-- **React Native**: Framework for building the app
-- **Expo**: Tool to help run and build React Native apps quickly
-- **React**: For managing the state of the app
-- **React Native Components**: For UI components like `Button`, `Text`, `TextInput`, `FlatList`, and `Modal`
-- **Styled with React Native's StyleSheet**: For creating a consistent, professional layout.
+> ![Dark Mode](screenshots/dark-mode.png)
 
----
+(![WhatsApp Image 2025-05-18 at 3 13 42 PM (1)](https://github.com/user-attachments/assets/c04b778e-2ec2-4ee9-9980-327b4eb3cba7))
 
-## Installation
+(![WhatsApp Image 2025-05-18 at 3 13 41 PM](https://github.com/user-attachments/assets/0f6bf58d-b4a9-416a-9a6b-664a36a564a2))
 
-### Prerequisites
 
-Make sure you have **Node.js** (LTS version recommended) installed.
 
-You will also need **Expo CLI** to run the app. If you haven't installed Expo CLI yet, do so with the following command:
+
+## 🛠️ Tech Stack
+
+- **React Native**
+- **Expo**
+- **React Native Reanimated** – for animations
+- **react-native-get-random-values** – UUID support in Hermes engine
+- **AsyncStorage** – for saving goals
+- **React Native Vector Icons** – for icons
+
+## 📦 Installation
 
 ```bash
-npm install -g expo-cli
+git clone https://github.com/Esdeath4l/GoalApp.git
+cd GoalApp
+npm install
 ````
 
-### Steps to Run the Project
+### 🔃 Run the App
 
-1. **Clone the repository**:
+Using **Expo CLI**:
 
-   Clone this repository to your local machine using the following command:
+```bash
+npx expo start
+```
 
-   ```bash
-   git clone https://github.com/yourusername/goal-tracker-app.git
-   ```
+Make sure to have the Expo Go app installed on your device or an Android/iOS emulator running.
 
-2. **Navigate to the project directory**:
+## ⚙️ Custom Font Setup
 
-   Change into the directory of the cloned repo:
+This app uses the `Poppins` font. Ensure it's linked and loaded correctly inside your app entry point:
 
-   ```bash
-   cd goal-tracker-app
-   ```
+```js
+import * as Font from 'expo-font';
 
-3. **Install dependencies**:
+await Font.loadAsync({
+  'Poppins-Regular': require('./fonts/Poppins-Regular.ttf'),
+  'Poppins-Bold': require('./fonts/Poppins-Bold.ttf'),
+});
+```
 
-   Install the required dependencies using npm or yarn:
+## 📁 Folder Structure (Simplified)
 
-   ```bash
-   npm install
-   ```
+```
+GoalApp/
+├── assets/
+│   └── images and sounds/
+├── components/
+│   └── GoalItem.js
+├── screens/
+│   └── HomeScreen.js
+├── App.js
+└── fonts
+```
 
-4. **Start the Expo project**:
+## 📌 Todo / Improvements
 
-   Launch the app using the Expo CLI:
+* [done] Add persistent dark mode toggle
+* [done] Include polished animations
+* [done] Use UUID for goal IDs
+* [ ] Add swipe-to-delete
+* [ ] Add calendar or deadline feature
+* [ ] Enable goal editing
 
-   ```bash
-   expo start
-   ```
+## 👩‍💻 Author
 
-5. **Run on your device**:
+**Ritika S.**
+[GitHub](https://github.com/Esdeath4l) • [LinkedIn] (https://www.linkedin.com/in/ritika-s-a004b527b/)
 
-   Scan the QR code that appears in the terminal or browser using the **Expo Go** app (available for both iOS and Android).
+## 📄 License
 
----
-
-## License
-
-This project is **all rights reserved**. Unauthorized use, reproduction, or distribution of the code is prohibited. Please contact the author for permissions if needed.
-
----
-
-## Author
-
-* **Your Name** - [Your GitHub Profile](https://github.com/Esdeath4l)
-
----
-
-## Acknowledgements
-
-* Inspired by various React Native tutorials
-* Thanks to the React Native community for their resources, libraries, and tools that make building apps fun and easy!
-
----
-
-## Project Structure
-
-### `App.js`
-
-Contains the main application logic, including:
-
-* The UI for adding and displaying goals
-* State management using React's `useState` hook
-* Modal integration for goal inputs and goal deletion
-
-### `GoalInput.js`
-
-Handles the user input for adding new goals. It includes:
-
-* A text input field for entering the goal
-* A button to submit the new goal
-
-### `GoalItem.js`
-
-Displays each goal in a list. It includes:
-
-* A `Text` component to display the goal
-* A button to delete the goal
-
----
-
-## Example Screenshots
-
-### Add New Goal Screen & Goal List Screen
-(![12323d2d-8ff3-47a7-bdaf-fce61880b838](https://github.com/user-attachments/assets/30f0c0c0-efb7-4fd4-b951-39967d7a6333))
-(  ![1b45ac59-c122-48af-b9e2-ebb51ea3f577](https://github.com/user-attachments/assets/f626d019-3cef-4c3b-ae35-f294310e6829)
-   )
-
----
-
-## How to Contribute
-
-If you would like to contribute to the app, feel free to fork this repository and create a pull request. We welcome suggestions and improvements.
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-name`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature-name`)
-5. Create a new Pull Request
-
----
-
-## Issues & Feedback
-
-If you encounter any issues with the app, please create a new issue in the repository. We appreciate any feedback and will do our best to address it.
-
-````
-
-### Steps to Add It to Your GitHub Repository:
-1. **Create the README file**:
-   - Create a file named `README.md` in the root directory of your project.
-   
-2. **Copy and Paste**:
-   - Copy the entire content above and paste it inside the `README.md` file.
-
-3. **Commit the Changes**:
-   - Add the README file to Git:
-     ```bash
-     git add README.md
-     ```
-   
-   - Commit the file:
-     ```bash
-     git commit -m "Add README file"
-     ```
-
-   - Push it to GitHub:
-     ```bash
-     git push
-     ```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
